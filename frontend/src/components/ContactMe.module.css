@@ -1,0 +1,61 @@
+.card {
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  }
+
+  
+  .ingredientform {
+    width: 200rem;
+    margin: 2rem auto;
+    max-width: 50%;
+  }
+  
+  .formcontrol.label,
+  .formcontrol input {
+    display: block;
+    width: 100%;
+  }
+  
+  .formcontrol input {
+    font: inherit;
+    padding: 0.1rem 0.25rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .formcontrol textarea {
+    font: inherit;
+    padding: 0.1rem 0.25rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .formcontrol input:focus {
+    outline: none;
+    border-bottom-color: #FC1501;
+  }
+  
+  .formcontrol textarea:focus {
+    outline: none;
+    border-bottom-color: #FC1501;
+  }
+  
+  .ingredientform__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+  }
+
+ button{
+    font: bold;
+    background: #FF6600;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    border: 1px solid #FF6600;
+    margin: 0.3rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+ }
