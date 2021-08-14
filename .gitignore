@@ -9,6 +9,8 @@ media
 # Backup files # 
 *.bak 
 
+
+/requirements.txt
 # Python # 
 *.py[cod] 
 *$py.class 
