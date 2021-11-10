@@ -1,6 +1,6 @@
  Shopify an Ecommerce Website With Django and React
 
-Live Demo can be viewed at https://shopify-me.herokuapp.com/
+Live Demo can be viewed at https://shopify-ng.herokuapp.com/
 
 
 
