@@ -10,7 +10,12 @@ django-summernote==0.8.11.6
 djangorestframework==3.12.4
 djangorestframework-simplejwt==4.7.1
 gunicorn==20.1.0
+<<<<<<< HEAD
 psycopg2 
+=======
+Pillow==8.1.2
+psycopg2 @ 
+>>>>>>> parent of cf4191d (popo)
 pycparser==2.20
 Pygments==2.8.1
 PyJWT==2.1.0
