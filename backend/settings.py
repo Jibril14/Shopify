@@ -61,7 +61,11 @@ CORS_ORIGIN_ALLOW_ALL =True
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
+<<<<<<< HEAD
     'whitenoise.middleware.WhiteNoiseMiddleware',
+=======
+    
+>>>>>>> parent of 3c345ce (koko)
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
