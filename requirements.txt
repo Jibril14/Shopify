@@ -11,7 +11,12 @@ djangorestframework==3.12.4
 djangorestframework-simplejwt==4.7.1
 gunicorn==20.1.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 psycopg2 
+=======
+Pillow==8.1.2
+psycopg2 @ 
+>>>>>>> parent of cf4191d (popo)
 =======
 Pillow==8.1.2
 psycopg2 @ 
