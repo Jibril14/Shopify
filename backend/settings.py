@@ -65,6 +65,9 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 =======
     
+<<<<<<< HEAD
+>>>>>>> parent of 3c345ce (koko)
+=======
 >>>>>>> parent of 3c345ce (koko)
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
