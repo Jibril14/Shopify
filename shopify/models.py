@@ -1,6 +1,6 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
-# Create your models here.
 from django.contrib.auth.models import User
 
 
@@ -17,7 +17,8 @@ class Categories(models.TextChoices):
 class Product(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     name = models.CharField(max_length=200, null=True, blank=True)
-    image = models.ImageField(upload_to='static/images', null=True, blank=True)
+    image = CloudinaryField( 'image')
+    #image = models.ImageField(upload_to='static/images', null=True, blank=True)
     brand = models.CharField(max_length=200, null=True, blank=True)
     category = models.CharField(max_length=200,choices=Categories.choices,
     default=Categories.Cloths, null=True, blank=True)
