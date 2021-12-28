@@ -24,43 +24,46 @@ const ProductScreen =({ match, history }) =>{
     }, [dispatch])
 
   
+   
     const addToCartHandler = () =>{
        history.push(`/cart/${match.params.id}?qty=${qty}`)
     }
      return(
-    <div>
-    <Link to='/' className='btn btn-light my-5'> Go Back</Link>
-    
-    <Row>
-    <Col md={6}>
-        <Image src={product.image} alt={product.name} fluid />
-    </Col>
+      <div>
+        <Link to='/' className='btn btn-light my-5'> Go Back</Link>
+            {loading ?
+                <Loader />
+                :
+                 <Row>
+                     <Col md={6}>
+                        <Image src={product.image} alt={product.name} fluid />
+                     </Col>
          
-      <Col md={3}>
-       <ListGroup variant="flush">
-       <ListGroup.Item>
-          <h3>{product.name}</h3>
-       </ListGroup.Item>
+                         <Col md={3}>
+                             <ListGroup variant="flush">
+                             <ListGroup.Item>
+                                           <h3>{product.name}</h3>
+                             </ListGroup.Item>
  
-       <ListGroup.Item>
-          <Rating value={product.rating} text={`${product.reviewsNum} ratings`} color={'#D6C537'} />
-       </ListGroup.Item>
+                             <ListGroup.Item>
+                                           <Rating value={product.rating} text={`${product.reviewsNum} ratings`} color={'#D6C537'} />
+                             </ListGroup.Item>
        
  
-       <ListGroup.Item>
-          Price: NGR {product.price}
-          </ListGroup.Item>
+                                <ListGroup.Item>
+                                        Price: NGR {product.price}
+                                        </ListGroup.Item>
  
  
-          <ListGroup.Item>
-             Description: {product.description}
-          </ListGroup.Item>
+                                        <ListGroup.Item>
+                                           Description: {product.description}
+                                        </ListGroup.Item>
  
-       </ListGroup>
-      </Col>
+                                 </ListGroup>
+                        </Col>
  
-    <Col md={3}>
-        <Card>
+                  <Col md={3}>
+                       <Card>
         <ListGroup variant='flush'>
            <ListGroup.Item>
             <Row>
@@ -102,16 +105,13 @@ const ProductScreen =({ match, history }) =>{
                                {x + 1}
                             </option>
                          ) )
-                      }  
-                  
+                      } 
                   </Form.Control>
                   </Col>
                </Row>
           </ListGroup.Item>
            )}
             
- 
- 
          <ListGroup.Item>
              <Button onClick={addToCartHandler} className='btn-block' type='button' disabled={product.numInStock ===0}>Add to Cart </Button>
          </ListGroup.Item>
@@ -121,12 +121,12 @@ const ProductScreen =({ match, history }) =>{
         </Card>
     
     </Col>
- 
- 
     </Row>
+     }
     
     </div>
      );
  }
+ 
  
  export default ProductScreen;
